@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Peter Heck">
+    <meta name="description" content="This is the contact page for my final for GIT 215 about One Heck of a Resort.">
+    <title>One Heck of a Resort | Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <h1><a href="index.html">ONE HECK OF A RESORT</a></h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">Accommodations</a></li>
+            <li><a href="" id="current">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="intro">
+        <h2>Contact Us</h2>
+        <p>
+            Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!<br>
+            <span class="req">Required fields marked with a *</span>
+        </p>
+        <img src="images/swiss-sunset.jpg" alt="A picture of a beautiful sunset behind a mountain overlooking a lake in the foreground with a tree-line at the bank of the lake with houses scattered within">
+    </section>
+
+    <div id="form">
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post">
+            <div id="group-1">
+                <label for="name-full"><span class="req">*</span>Full Name:</label>
+                <input name="full name" id="name-full" required>
+
+                <label for="email-add"><span class="req">*</span>Email Address:</label>
+                <input name="email" id="email-add" type="email" required>
+
+                <label for="phone-num"><span class="req">*</span>Phone Number:</label>
+                <input name="phone number" id="phone-num" type="tel" pattern="[0-9]" required>
+            </div>
+
+            <div id="group-2">
+                <fieldset>
+                    <legend><span class="req">*</span>Preferred Method of Contact</legend>
+
+                    <label class="button"><input type="radio" name="preferred" value="email" required>Email</label>
+
+                    <label class="button" ><input type="radio" name="preferred" value="phone">Phone</label>
+                </fieldset>
+
+                <label for="comms"><span class="req">*</span>Comments:</label>
+                <textarea name="comments" id="comms" required></textarea>
+
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <p>Copyright &copy;2023 - One Heck of a Resort</p>
+    <p>This site is for educational purposes only</p>
+</footer>
+
+</body>
+</html>
